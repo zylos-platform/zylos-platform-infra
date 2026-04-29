@@ -1,0 +1,11 @@
+## Default owners for everything in the repo
+**@kamesh-chathuranga**
+
+## Terraform modules
+/terraform/modules/ @kamesh-chathuranga
+
+## Kubernetes manifests
+/kubernetes/ @kamesh-chathuranga
+
+## CI workflows
+/.github/workflows/ @kamesh-chathuranga
