@@ -107,7 +107,7 @@ jobs:
       - uses: terraform-linters/setup-tflint@v4
         with:
           tflint_version: latest
-      - run: tflint --recursive --format compact
+      - run: tflint --recursive --config="$(pwd)/.tflint.hcl" --format compact
 
   tfsec:
     name: tfsec (security scan)
@@ -117,7 +117,7 @@ jobs:
       - uses: aquasecurity/tfsec-action@v1.0.3
         with:
           working_directory: terraform/
-          soft_fail: true   # advisory; doesn't block PRs yet
+          soft_fail: true # advisory; doesn't block PRs yet
 
   conventional-commits:
     name: Conventional Commits
