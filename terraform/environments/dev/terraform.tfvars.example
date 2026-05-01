@@ -1,0 +1,9 @@
+# Copy this to terraform.tfvars and adjust per local needs.
+# DO NOT commit terraform.tfvars (it's gitignored).
+
+aws_region         = "us-east-1"
+project            = "zylos"
+environment        = "dev"
+vpc_cidr           = "10.10.0.0/16"
+kubernetes_version = "1.33"
+domain_name        = "zylos.app"
