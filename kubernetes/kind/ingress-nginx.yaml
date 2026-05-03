@@ -1,0 +1,28 @@
+###############################################################################
+#
+# NGINX Ingress Controller for kind.
+#
+# kind has no native LoadBalancer Service support. Instead, we deploy NGINX
+# Ingress as a DaemonSet pinned to nodes with `ingress-ready=true`, and we
+# expose ports 80/443 from the control-plane node to the host (configured in
+# cluster.yaml). This is the kind-recommended pattern.
+#
+# Reference: https://kind.sigs.k8s.io/docs/user/ingress/
+#
+# We use the upstream ingress-nginx manifest pinned to a specific version.
+# Apply this AFTER the cluster is up.
+#
+# NOTE: When Argo CD takes over the cluster, ingress definitions for
+# individual UIs (Argo CD, Grafana, Keycloak) will reference this controller
+# via `ingressClassName: nginx`.
+#
+###############################################################################
+# This file is APPLIED via kubectl, not stored as static manifests, since
+# it's pulled directly from the upstream project.
+#
+# Apply it with:
+#   kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.11.3/deploy/static/provider/kind/deploy.yaml
+#
+# We pin the version: controller-v1.11.3
+#
+# This file documents the reference; the actual apply is in the bootstrap script.
