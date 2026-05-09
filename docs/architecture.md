@@ -2,9 +2,9 @@
 
 ## Repo Boundary
 
-`zylos-platform-infra` provisions **AWS infrastructure**. It does not
+`zylos-infra-terraform` provisions **AWS infrastructure**. It does not
 deploy applications, install cluster addons, or configure GitOps. Those
-live in `zylos-platform-bootstrap` and the service repos.
+live in `zylos-infra-gitops` and the service repos.
 
 ## Module Composition
 

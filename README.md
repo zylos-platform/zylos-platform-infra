@@ -1,17 +1,17 @@
-# zylos-platform-infra
+# zylos-infra-terraform
 
 Terraform infrastructure-as-code for the Zylos platform. Provisions AWS
 infrastructure (VPC, EKS, MSK, Aurora, ElastiCache, OpenSearch).
 
 ## Stack
 
-| Component | Pinned Version |
-|-----------|----------------|
-| Terraform | `>= 1.10.0` |
-| AWS Provider | `~> 6.0` |
-| terraform-aws-modules/vpc/aws | `~> 6.0` |
-| terraform-aws-modules/eks/aws | `~> 21.0` |
-| State Backend | S3 with `use_lockfile = true` (no DynamoDB) |
+| Component                     | Pinned Version                              |
+| ----------------------------- | ------------------------------------------- |
+| Terraform                     | `>= 1.10.0`                                 |
+| AWS Provider                  | `~> 6.0`                                    |
+| terraform-aws-modules/vpc/aws | `~> 6.0`                                    |
+| terraform-aws-modules/eks/aws | `~> 21.0`                                   |
+| State Backend                 | S3 with `use_lockfile = true` (no DynamoDB) |
 
 ## Repository Structure
 

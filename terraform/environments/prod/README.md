@@ -21,7 +21,7 @@ terraform apply
 
 ## Tear Down (Cost Control)
 
-**WARNING**: Applying this environment incurs ongoing AWS costs. 
+**WARNING**: Applying this environment incurs ongoing AWS costs.
 Always `terraform destroy` when not in active use unless you explicitly intend to keep it running.
 
 ```bash
