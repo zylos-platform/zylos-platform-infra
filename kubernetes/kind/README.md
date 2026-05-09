@@ -49,7 +49,7 @@ After this, ports 80 and 443 on `localhost` route into the cluster.
 Now hand off to the GitOps bootstrap:
 
 ```bash
-cd ../zylos-platform-bootstrap
+cd ../zylos-infra-gitops
 make bootstrap
 ```
 

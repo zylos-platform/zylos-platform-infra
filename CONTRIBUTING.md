@@ -1,4 +1,4 @@
-# Contributing to zylos-platform-infra
+# Contributing to zylos-infra-terraform
 
 ## Branching
 
